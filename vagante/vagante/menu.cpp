@@ -25,7 +25,7 @@ void my_menu()
 		ImGui::End();
 		return;
 	}
-
+		
 
 	ImGui::InputFloat("X Pos", &g_Game.pCharacter->xPos, 1, 100, "%.6f");
 	ImGui::InputFloat("y Pos", &g_Game.pCharacter->yPos, 1, 100, "%.6f");
@@ -39,14 +39,20 @@ void my_menu()
 	ImGui::InputFloat("Max Health", &g_Game.pCharacter->maxHp, 1, 100, "%.6f");
 	ImGui::Checkbox("Immortal", &g_Game.pCharacter->immortal);
 	ImGui::Checkbox("NoClip", &g_Game.pCharacter->cheatNoClip);
+	ImGui::InputFloat("NoClip Speed", &g_Game.pCharacter->debugNoclipSpeed, 1, 100, "%.6f");
+
 	ImGui::Separator();
 	ImGui::InputFloat("Melee Damage", &g_Game.pCharacter->meleeDamage, 1, 100, "%.6f");
 	ImGui::InputFloat("Range Damage", &g_Game.pCharacter->rangeDamage, 1, 100, "%.6f");
 	ImGui::InputFloat("Damage From Items", &g_Game.pCharacter->damageFromItems, 1, 100, "%.6f");
 	ImGui::InputFloat("Evasion Percentage", &g_Game.pCharacter->evasionPercent, 1, 100, "%.6f");
 	ImGui::InputFloat("Critical Percentage", &g_Game.pCharacter->criticalPercent, 1, 100, "%.6f");
+
+	ImGui::Separator();
 	ImGui::InputInt("Add Money", &g_Game.pCharacter->goldCount);
+	ImGui::InputInt("Experience Level", &g_Game.pCharacter->experienceLevel);
+	ImGui::InputInt("Stored exp lvls", &g_Game.pCharacter->storedExperienceLevels);
 
-
+	ImGui::End();
 }
 
