@@ -5,6 +5,5 @@
 class Game
 {
 public:
-	Character* pCharacter = NULL;
+    Character *pCharacter = NULL;
 };
-

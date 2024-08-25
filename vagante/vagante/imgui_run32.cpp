@@ -34,10 +34,10 @@ int imgui_run()
     // Create application window
     //ImGui_ImplWin32_EnableDpiAwareness();
     UINT icon_flags = LR_LOADFROMFILE | LR_DEFAULTSIZE;
-    HICON icon = (HICON)LoadImage(NULL, L"C:\\Users\\uttervitriol\\source\\repos\\imgui_proxy\\tingle.ico", IMAGE_ICON, 0, 0, icon_flags);
+    HICON icon = (HICON)LoadImage(NULL, L"C:\\Users\\uttervitriol\\source\\repos\\vagante\\tingle.ico", IMAGE_ICON, 0, 0, icon_flags);
     WNDCLASSEXW wc = { sizeof(wc), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(nullptr), icon, nullptr, nullptr, nullptr, L"ImGui Example", nullptr };
     ::RegisterClassExW(&wc);
-    HWND hwnd = ::CreateWindowW(wc.lpszClassName, L"Tingle's Proxy", WS_OVERLAPPEDWINDOW, 100, 100, 1280, 1200, nullptr, nullptr, wc.hInstance, nullptr);
+    HWND hwnd = ::CreateWindowW(wc.lpszClassName, L"Tingle's Trainer", WS_OVERLAPPEDWINDOW, 100, 100, 1280, 1200, nullptr, nullptr, wc.hInstance, nullptr);
 
     // Initialize Direct3D
     if (!CreateDeviceD3D(hwnd))

@@ -145,8 +145,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameData.cpp" />
     <ClCompile Include="hooks.cpp" />
     <ClCompile Include="imgui_run32.cpp" />
     <ClCompile Include="imgui_run64.cpp" />
