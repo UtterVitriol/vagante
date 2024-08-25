@@ -11,7 +11,7 @@
 #include "imgui.h"
 #include "imgui_impl_win32.h"
 #include "imgui_impl_dx12.h"
-#include "proxy_menu.h"
+#include "menu.h"
 #include <d3d12.h>
 #include <dxgi1_4.h>
 #include <tchar.h>
@@ -154,7 +154,7 @@ int imgui_run()
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
-        proxy_menu();
+        my_menu();
 
         // Rendering
         ImGui::Render();
